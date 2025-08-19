@@ -1,1 +1,1 @@
-# 2-3-1_JavaS_HTML
+# See index.html file for assignment
