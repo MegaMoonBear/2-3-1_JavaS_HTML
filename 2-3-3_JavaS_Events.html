@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Day3 - JS Events</title>
+    </head>
+
+    <body>
+        <h1 id="header">Day 3 - Event</h1>
+        <p>When button is clicked...</p>
+
+        <!--1st button-->
+        <button onclick="document.querySelector('#header').innerText='Clicked header - Changed by button'">Change Header
+        </button>
+
+        <!--2nd button-->
+        <button id="btn-two">Change Back
+        </button>
+
+        <!--  built-in function as addEventListener, then parameters as click and...  -->
+        <!--  ...call-back from double, empty parentheses thru next 2 lines  -->
+        <script>
+                const buttonTwo = document.getElementById("btn-two");
+                buttonTwo.addEventListener("click",()=>{
+                    document.querySelector("#header").innerText="Day 3: JS Events"
+                })
+        </script>
+        
+    </body>
+
+    
+    
+    <style>
+        #header {
+
+        }
+
+        #buttonTwo {
+            
+        }
+
+    </style>
+</html>
